@@ -1,6 +1,8 @@
 import { type NextPage } from "next";
 import Link from "next/link";
 import { Fragment, useCallback, useEffect, useRef, useState } from "react";
+import Chatbot from '../components/Chatbot';
+
 import {
   ActiveBookSvg,
   LockedBookSvg,
@@ -167,9 +169,9 @@ const getTileTooltipLeftOffset = ({
     unitNumber % 2 === 1
       ? tileTooltipLeftOffsets
       : [
-          ...tileTooltipLeftOffsets.slice(4),
-          ...tileTooltipLeftOffsets.slice(0, 4),
-        ];
+        ...tileTooltipLeftOffsets.slice(4),
+        ...tileTooltipLeftOffsets.slice(0, 4),
+      ];
 
   return offsets[index % offsets.length] ?? tileTooltipLeftOffsets[0];
 };
@@ -245,8 +247,8 @@ const TileTooltip = ({
           status === "ACTIVE"
             ? activeBackgroundColor
             : status === "LOCKED"
-            ? "border-2 border-gray-200 bg-gray-100"
-            : "bg-yellow-400",
+              ? "border-2 border-gray-200 bg-gray-100"
+              : "bg-yellow-400",
           index === selectedTile ? "top-4 scale-100" : "-top-14 scale-0",
         ].join(" ")}
         style={{ left: "calc(50% - 150px)" }}
@@ -257,8 +259,8 @@ const TileTooltip = ({
             status === "ACTIVE"
               ? activeBackgroundColor
               : status === "LOCKED"
-              ? "border-l-2 border-t-2 border-gray-200 bg-gray-100"
-              : "bg-yellow-400",
+                ? "border-l-2 border-t-2 border-gray-200 bg-gray-100"
+                : "bg-yellow-400",
           ].join(" ")}
           style={{
             left: getTileTooltipLeftOffset({ index, unitNumber, tilesLength }),
@@ -270,8 +272,8 @@ const TileTooltip = ({
             status === "ACTIVE"
               ? "text-white"
               : status === "LOCKED"
-              ? "text-gray-400"
-              : "text-yellow-600",
+                ? "text-gray-400"
+                : "text-yellow-600",
           ].join(" ")}
         >
           {description}
@@ -510,27 +512,7 @@ const Learn: NextPage = () => {
 
       <div className="flex justify-center gap-3 pt-14 sm:p-6 sm:pt-10 md:ml-24 lg:ml-64 lg:gap-12">
         <div className="flex max-w-2xl grow flex-col">
-          {units.map((unit) => (
-            <UnitSection unit={unit} key={unit.unitNumber} />
-          ))}
-          <div className="sticky bottom-28 left-0 right-0 flex items-end justify-between">
-            <Link
-              href="/lesson?practice"
-              className="absolute left-4 flex h-16 w-16 items-center justify-center rounded-full border-2 border-b-4 border-gray-200 bg-white transition hover:bg-gray-50 hover:brightness-90 md:left-0"
-            >
-              <span className="sr-only">Practice exercise</span>
-              <PracticeExerciseSvg className="h-8 w-8" />
-            </Link>
-            {scrollY > 100 && (
-              <button
-                className="absolute right-4 flex h-14 w-14 items-center justify-center self-end rounded-2xl border-2 border-b-4 border-gray-200 bg-white transition hover:bg-gray-50 hover:brightness-90 md:right-0"
-                onClick={() => scrollTo(0, 0)}
-              >
-                <span className="sr-only">Jump to top</span>
-                <UpArrowSvg />
-              </button>
-            )}
-          </div>
+          <Chatbot />
         </div>
         <RightBar />
       </div>
@@ -545,6 +527,7 @@ const Learn: NextPage = () => {
     </>
   );
 };
+
 
 export default Learn;
 
@@ -645,3 +628,8 @@ const UnitHeader = ({
     </article>
   );
 };
+
+
+
+
+
