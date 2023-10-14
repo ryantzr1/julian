@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-custom-color {
+  background-color: #9d4489;
+}
+
+.hover\:bg-custom-color:hover {
+  background-color: #9d4489;
+}

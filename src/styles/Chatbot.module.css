@@ -33,8 +33,8 @@
 }
 
 .message.user {
-  background-color: #007bff;
-  color: white;
+  background-color: #f1f1f1;
+  color: black;
   align-self: flex-end; /* Align user messages to the right */
 }
 
@@ -43,7 +43,7 @@
 }
 
 .feedback {
-  color: black;
+  color: #9d4489;
   font-style: italic;
   margin-top: 4px;
   align-self: flex-end;

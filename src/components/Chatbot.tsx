@@ -77,7 +77,7 @@ const Chatbot: React.FC = () => {
 
     async function callOpenAI(message: string, instruction: string): Promise<string> {
         const API_URL = 'https://api.openai.com/v1/chat/completions';
-        const API_KEY = "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";
+        const API_KEY = process.env.API_KEY;
 
         const messages = [
             { role: "system", content: instruction },
