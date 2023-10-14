@@ -8,7 +8,7 @@ The inception of Julian was kindled during a 6-month stint in Montreal, where th
 
 ## 🌎 A Global Quandary
 
-The language learning conundrum is not a lone battle. As per UNESCO, a staggering 40% of students worldwide lack access to education in their mother tongue. It's more than just a dalliance with a new language; it's about availing education, securing jobs, making informed choices, and breaking the shackles of poverty.
+The struggle with language learning is a global narrative. UNESCO reports that a whopping 40% of students globally are deprived of education in their native tongue. This challenge transcends mere hobby learning; it's about enabling education, securing employment, making informed decisions, and escaping the clutches of poverty.
 
 ## 🚧 The Hurdles
 
@@ -40,6 +40,7 @@ Reflect on the plight of students bereft of education in their language. Julian 
 - **Database**: MongoDB
 - **Algorithm**: Epsilon Greedy
 - **Voice Recognition**: Whisper AI
-- **NLP Engine**: GPT-4
+- **NLP Engine**: GPT-3.5
+- Frontend: Built on top of a React Duolingo clone for transparency
 
 Together, let's make the world a smaller place, one language at a time. With Julian, language learning is not just fun, but a gateway to a realm of unbounded possibilities. Your journey towards becoming a polyglot just got a lot more exciting!
