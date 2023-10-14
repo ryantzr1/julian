@@ -45,7 +45,11 @@ Reflect on the plight of students bereft of education in their language. Julian 
 - **NLP Engine**: GPT-3.5
 - Frontend: Built on top of a React Duolingo clone for transparency
 
+
 ##Quick Demo
-https://github.com/ryantzr1/julian/assets/63581031/dcf7f694-abd1-492c-8244-bad56dee4963
+-----
+https://github.com/ryantzr1/julian/assets/63581031/69f4854e-aad3-4b94-b76a-54190f086bc2
+
+
 
 Together, let's make the world a smaller place, one language at a time. With Julian, language learning is not just fun, but a gateway to a realm of unbounded possibilities. Your journey towards becoming a polyglot just got a lot more exciting!
