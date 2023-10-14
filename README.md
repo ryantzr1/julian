@@ -37,7 +37,7 @@ We don’t just pinpoint errors. We guide you towards perfection, offering tailo
 
 Reflect on the plight of students bereft of education in their language. Julian is their beacon of hope, unlocking doors to new languages, opportunities, jobs, and education.
 
-## 🛠 Tech Stack
+## 🛠 Tech Stack (Planned/Implemented)
 
 - **Database**: MongoDB
 - **Algorithm**: Epsilon Greedy
