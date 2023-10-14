@@ -7,22 +7,27 @@ import type { LoginScreenState } from "./LoginScreen";
 import { LoginScreen } from "./LoginScreen";
 import { GlobeIconSvg, PodcastIconSvg } from "./Svgs";
 import { useBoundStore } from "~/hooks/useBoundStore";
+import StatsIcon from "../../public/Stats icon.svg";
+import Image from "next/image";
 
 const LeftBarMoreMenuSvg = (props: ComponentProps<"svg">) => {
   return (
-    <svg width="46" height="46" viewBox="0 0 46 46" fill="none" {...props}>
-      <circle
-        cx="23"
-        cy="23"
-        r="19"
-        fill="#CE82FF"
-        stroke="#CE82FF"
-        strokeWidth="2"
-      />
-      <circle cx="15" cy="23" r="2" fill="white" />
-      <circle cx="23" cy="23" r="2" fill="white" />
-      <circle cx="31" cy="23" r="2" fill="white" />
-    </svg>
+    // <svg width="46" height="46" viewBox="0 0 46 46" fill="none" {...props}>
+    //   <circle
+    //     cx="23"
+    //     cy="23"
+    //     r="19"
+    //     fill="#CE82FF"
+    //     stroke="#CE82FF"
+    //     strokeWidth="2"
+    //   />
+    //   <circle cx="15" cy="23" r="2" fill="white" />
+    //   <circle cx="23" cy="23" r="2" fill="white" />
+    //   <circle cx="31" cy="23" r="2" fill="white" />
+    // </svg>
+
+    <Image src={StatsIcon} alt="My Icon" width={50} height={50} />
+
   );
 };
 
@@ -41,9 +46,9 @@ export const LeftBar = ({ selectedTab }: { selectedTab: Tab | null }) => {
       <nav className="fixed bottom-0 left-0 top-0 hidden flex-col gap-5 border-r-2 border-[#e5e5e5] bg-white p-3 md:flex lg:w-64 lg:p-5">
         <Link
           href="/learn"
-          className="mb-5 ml-5 mt-5 hidden text-3xl font-bold text-[#58cc02] lg:block"
+          className="mb-5 ml-5 mt-5 hidden text-3xl font-bold text-[#9D4489] lg:block"
         >
-          duolingo
+          Julian
         </Link>
         <ul className="flex flex-col items-stretch gap-3">
           {bottomBarItems.map((item) => {
@@ -78,7 +83,7 @@ export const LeftBar = ({ selectedTab }: { selectedTab: Tab | null }) => {
             tabIndex={0}
           >
             <LeftBarMoreMenuSvg />{" "}
-            <span className="hidden text-sm lg:inline">More</span>
+            <span className="hidden text-sm lg:inline">Statistics</span>
             <div
               className={[
                 "absolute left-full top-[-10px] min-w-[300px] rounded-2xl border-2 border-gray-300 bg-white text-left text-gray-400",
