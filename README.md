@@ -27,6 +27,8 @@ Employing cutting-edge algorithms, Julian scrutinizes your sentence structure in
 
 Herein lies the allure: Julian, responding to your interactions, conjures up tailored language exercises on the go. Envision a personal language coach nestled in your pocket, ready to challenge you just aptly.
 
+
+
 ## 🔄 Beyond Feedback
 
 We don’t just pinpoint errors. We guide you towards perfection, offering tailored content and exercises to mend your unique linguistic chinks.
@@ -42,5 +44,8 @@ Reflect on the plight of students bereft of education in their language. Julian 
 - **Voice Recognition**: Whisper AI
 - **NLP Engine**: GPT-3.5
 - Frontend: Built on top of a React Duolingo clone for transparency
+
+##Quick Demo
+https://github.com/ryantzr1/julian/assets/63581031/dcf7f694-abd1-492c-8244-bad56dee4963
 
 Together, let's make the world a smaller place, one language at a time. With Julian, language learning is not just fun, but a gateway to a realm of unbounded possibilities. Your journey towards becoming a polyglot just got a lot more exciting!
